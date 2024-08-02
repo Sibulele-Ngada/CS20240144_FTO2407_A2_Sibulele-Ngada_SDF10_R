@@ -1,12 +1,12 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"
 import { getDatabase,
          ref,
          push,
          onValue,
-         remove } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"
+         remove } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"
 
 const firebaseConfig = {
-    databaseURL: process.env.DATABASE_URL
+    databaseURL: "https://leads-tracker-app-922fb-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
 const app = initializeApp(firebaseConfig)
